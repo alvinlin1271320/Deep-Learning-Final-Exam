@@ -1,5 +1,31 @@
 # **Deep Learing Final Exam**  
 
+## **Requirements**
+    tensorflow
+    keras
+    matplotlib
+    numpy
+
+## **Training**
+
+**Use My Model**  
+
+    python use_own_model.py
+    
+**Use Vgg16 Model**  
+
+    python use_vgg16_model.py
+    
+## **Validation**
+
+**Use My Model**  
+
+    python validation(own_model).py
+    
+**Use Vgg16 Model**  
+
+    python validation(vgg16_model).py
+
 ## **一、請利用flower_photos 這個資料集(Dataset)來訓練一個 Model。**  
 * 將Dataset 分 90% 是 Train 及 10% 是validation。  
   ![image](https://github.com/ALVIN-SMITH/Deep-Learning-Final-Exam/blob/main/md_pic/pic1-1.png)  
@@ -26,4 +52,5 @@
 **使用VGG16的準確度->30%**  
 ![image](https://github.com/ALVIN-SMITH/Deep-Learning-Final-Exam/blob/main/md_pic/pic2-5.png)  
 
-    我發現自己建立的模型準確率比vgg16效果還要好，可能是因為訓練時vgg16參數沒有調整好，所以訓練效果不好，可能可以增加batchsize或是更換loss function來增加準確率。
+    我發現自己建立的模型準確率比vgg16效果還要好，可能是因為訓練時vgg16參數沒有調整好，所以訓
+    練效果不好，可能可以增加batchsize或是更換loss function來增加準確率。
