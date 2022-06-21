@@ -7,7 +7,6 @@ import numpy as np
 from keras.preprocessing import image
 
 src_path_train = r"./train/"
-src_path_test = r"./test/"
 
 train_datagen = ImageDataGenerator(
         rescale=1 / 255.0,
@@ -48,17 +47,6 @@ valid_generator = train_datagen.flow_from_directory(
 )
 
 print(valid_generator.samples)
-test_generator = test_datagen.flow_from_directory(
-    directory=src_path_test,
-    target_size=(500, 500),
-    color_mode="rgb",
-    batch_size=1,
-    class_mode="binary",
-    shuffle=False,
-    seed=42
-)
-
-print(test_generator.samples)
 
 def prepare_model():
     model = Sequential()
